@@ -11,7 +11,7 @@ void draw()
 {
   background(255);
   rotateX(radians(60));
-  translate(50, 0, -150);
+  translate(50, -40, -100);
   pushMatrix();
    for(float x = 0; x < width/squareSize; x++){
     for(float y = 0; y < height/squareSize; y++){
@@ -28,7 +28,7 @@ void draw()
 }color setColour(float x, float y){
   float noiseValue = noise(x / res, y / res);
   if(noiseValue < 0.2){
-   return color(0, 255, 0); 
+   return color(0, 120, 0); 
   }else if(noiseValue < 0.4){
     return color(0, 75, 0);
   }else if(noiseValue < 0.5){
